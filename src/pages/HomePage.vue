@@ -31,8 +31,8 @@
     <footer class="footer">
       <p>Made with ❤️ by Lourenço Carlos (Enzadaz)</p>
       <p>
-        <a href="https://github.com/Enzadaz" target="_blank">GitHub</a> |
-        <a href="https://www.linkedin.com/in/enzadaz/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/reincedaniel" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/in/louren%C3%A7o-carlos-25a162146/" target="_blank">LinkedIn</a>
       </p>
     </footer>
   </q-page>
