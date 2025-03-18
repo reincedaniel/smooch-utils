@@ -61,7 +61,7 @@
 
 ## 📸 Preview
 
-![Smooch Utils Screenshot](https://via.placeholder.com/1200x600?text=Smooch+Utils+Preview)
+![Smooch Utils Screenshot](/ups_Screenshot_app.png)
 
 ---
 
