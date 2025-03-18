@@ -3,6 +3,13 @@ const routes = [
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
+      { path: '', component: () => import('pages/HomePage.vue') }
+    ]
+  },
+  {
+    path: '/token-generator',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
       { path: '', component: () => import('pages/IndexPage.vue') }
     ]
   },

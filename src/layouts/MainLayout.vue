@@ -1,6 +1,6 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
+    <q-header style="color: #03363d; background-color: #ffffff;" elevated>
       <q-toolbar>
         <q-btn
           flat
@@ -11,11 +11,16 @@
           @click="toggleLeftDrawer"
         />
 
-        <q-toolbar-title>
-          Quasar App
+        <q-toolbar-title style="display: flex; align-items: center;">
+          <img
+            src="https://static.zdassets.com/sunco-accounts/sunco-dashboard/v39/images/sunco_logof8b8a1d73d5a85009f61.svg"
+            alt="Smooch Logo"
+            style="height: 24px; margin-right: 8px;"
+          />
+           | <span class="text-bold q-ml-sm text-subtitle1">Smooch Utils</span>
         </q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
+        <div class="gt-xs">by: <span class="text-bold">Enzadaz</span></div>
       </q-toolbar>
     </q-header>
 
@@ -28,10 +33,11 @@
         <q-item-label
           header
         >
-          Essential Links
+          MENU
         </q-item-label>
 
         <EssentialLink
+        class="color-smooch"
           v-for="link in linksList"
           :key="link.title"
           v-bind="link"
@@ -51,47 +57,18 @@ import EssentialLink from 'components/EssentialLink.vue'
 
 const linksList = [
   {
-    title: 'Docs',
-    caption: 'quasar.dev',
-    icon: 'school',
-    link: 'https://quasar.dev'
+    title: 'Home',
+    caption: 'Start',
+    icon: 'home',
+    link: '/'
   },
   {
-    title: 'Github',
-    caption: 'github.com/quasarframework',
-    icon: 'code',
-    link: 'https://github.com/quasarframework'
+    title: 'Token Generator',
+    caption: 'Jwt',
+    icon: 'token',
+    link: 'token-generator'
   },
-  {
-    title: 'Discord Chat Channel',
-    caption: 'chat.quasar.dev',
-    icon: 'chat',
-    link: 'https://chat.quasar.dev'
-  },
-  {
-    title: 'Forum',
-    caption: 'forum.quasar.dev',
-    icon: 'record_voice_over',
-    link: 'https://forum.quasar.dev'
-  },
-  {
-    title: 'Twitter',
-    caption: '@quasarframework',
-    icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev'
-  },
-  {
-    title: 'Facebook',
-    caption: '@QuasarFramework',
-    icon: 'public',
-    link: 'https://facebook.quasar.dev'
-  },
-  {
-    title: 'Quasar Awesome',
-    caption: 'Community Quasar projects',
-    icon: 'favorite',
-    link: 'https://awesome.quasar.dev'
-  }
+
 ]
 
 const leftDrawerOpen = ref(false)

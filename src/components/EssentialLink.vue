@@ -1,9 +1,8 @@
 <template>
   <q-item
     clickable
-    tag="a"
-    target="_blank"
-    :href="props.link"
+    :to="props.link"
+    active-class="color-smooch text-bold bg-yellow-2"
   >
     <q-item-section
       v-if="props.icon"
